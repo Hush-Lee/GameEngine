@@ -3,9 +3,9 @@ module;
 
 export module Engine;
 
-export namespace Engine
+export namespace engine
 {
-	class Engine{
+	class Application{
 	public:
 		void log(const std::string& message);
 		void run();

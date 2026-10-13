@@ -3,7 +3,7 @@ import Engine;
 
 int main()
 {
-	Engine::Engine engine;
-	engine.run();
+	engine::Application app;
+	app.run();
 	return 0;
 }

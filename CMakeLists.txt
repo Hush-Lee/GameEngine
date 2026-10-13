@@ -6,6 +6,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 project(engine-learning LANGUAGES CXX)
 
+add_compile_options(-Wall -Wextra -Wpedantic)
+
 execute_process(
 	COMMAND ${CMAKE_CXX_COMPILER} -print-file-name=libstdc++.modules.json
 	OUTPUT_VARIABLE LIBSTDCXX_MODULES_JSON
@@ -32,5 +34,7 @@ target_sources(std-modules PUBLIC
 	FILES ${STD_MODULE_SOURCES}
 )
 
+enable_testing()
 add_subdirectory("engine")
 add_subdirectory("sandbox")
+add_subdirectory("tests")

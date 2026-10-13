@@ -1,12 +1,12 @@
 module Engine;
 import std;
 
-void Engine::Engine::log(const std::string& message)
+void engine::Application::log(const std::string& message)
 {
 	std::println("[Engine] {}", message);
 }
 
-void Engine::Engine::run()
+void engine::Application::run()
 {
 	log("Engine skeleton OK");
 }
